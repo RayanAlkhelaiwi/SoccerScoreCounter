@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Soccer Score Counter</string>
+    <string name="teamOneName">1st Team</string>
+    <string name="teamOneGoalScore">0</string>
+    <string name="teamOnePenaltyScore">0</string>
+    <string name="teamOneFoulScore">0</string>
+    <string name="teamOneGoalButton">GOAL!</string>
+    <string name="teamOnePenaltyButton">PENALTY!</string>
+    <string name="teamOneFoulButton">Foul...</string>
+
+    <string name="teamTwoName">2nd Team</string>
+    <string name="teamTwoGoalScore">0</string>
+    <string name="teamTwoPenaltyScore">0</string>
+    <string name="teamTwoFoulScore">0</string>
+    <string name="teamTwoGoalButton">GOAL!</string>
+    <string name="teamTwoPenaltyButton">PENALTY!</string>
+    <string name="teamTwoFoulButton">Foul...</string>
+
+    <string name="resetButton">reset</string>
+</resources>

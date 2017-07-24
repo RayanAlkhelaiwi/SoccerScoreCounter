@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="me.rayanalkhelaiwi.soccerscorecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/teamOneLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamOneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamOneName"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/teamOneGoalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/teamOneGoalScore"
+                android:textColor="@android:color/black"
+                android:textSize="48sp" />
+
+            <LinearLayout
+                android:id="@+id/teamOnePenaltyFoulLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teamOnePenaltyScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/teamOnePenaltyScore"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/teamOneFoulScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/teamOneFoulScore"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/teamOneGoalButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamOneGoalScore"
+                android:text="@string/teamOneGoalButton" />
+
+            <Button
+                android:id="@+id/teamOnePenaltyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamOnePenaltyScore"
+                android:text="@string/teamOnePenaltyButton" />
+
+            <Button
+                android:id="@+id/teamOneFoulButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamOneFoulScore"
+                android:text="@string/teamOneFoulButton" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/teamTwoLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamTwoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamTwoName"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/teamTwoGoalScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/teamTwoGoalScore"
+                android:textColor="@android:color/black"
+                android:textSize="48sp" />
+
+            <LinearLayout
+                android:id="@+id/teamTwoPenaltyFoulLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teamTwoPenaltyScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/teamTwoPenaltyScore"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/teamTwoFoulScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/teamTwoFoulScore"
+                    android:textColor="#424242"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/teamTwoGoalButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamTwoGoalScore"
+                android:text="@string/teamTwoGoalButton" />
+
+            <Button
+                android:id="@+id/teamTwoPenaltyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamTwoPenaltyScore"
+                android:text="@string/teamTwoPenaltyButton" />
+
+            <Button
+                android:id="@+id/teamTwoFoulButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="teamTwoFoulScore"
+                android:text="@string/teamTwoFoulButton" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="resetScores"
+        android:text="@string/resetButton" />
+
+</RelativeLayout>
